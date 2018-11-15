@@ -4,45 +4,44 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-    html,body{height: 100%;width: 100%;margin:0;padding:0;}
-    body{
-    	background:url(./images/back.jpg)no-repeat;
-        width:100%;
-        height:100%;
-        background-size:100% 100%;
-        position:absolute;
-        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/back.jpg',sizingMethod='scale');
-    }
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(./images/01/MENU.jpg) no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+
+}
+
 .img1 {
-	margin-left:300px;
+	margin-left: 300px;
 }
+
 .img2 {
-	margin-left:400px;
+	margin-left: 400px;
 }
+
 .img3 {
-	margin-left:500px;
+	margin-left: 500px;
 }
 </style>
 <script type="text/javascript">
-function clickImg1(){
-	location.href="pages/01/01.html";
-}
-function clickImg2(){
-	
-}
-function clickImg3(){
-	
-}
+
 </script>
 </head>
 <body>
-<audio src="audio/bg1.wav" autoplay></audio>
-<img style="width:400px;" src="./images/图片8.png"/>
-	<div style="margin-top:150px;">
-		<img class="img1" src="./images/01/图片01.png" onclick="clickImg1()"/>
-		<img class="img2" src="./images/01/图片02.png" />
-		<img class="img3" src="./images/01/图片03.png" />
+	<audio src="audio/bg1.wav" autoplay></audio>
+
+	<div style="margin-top: 280px;">
+		<img class="img1" src="./images/01/图片01.png" onclick="location.href ='pages/01/01.html'" />
+		<img class="img2" src="./images/01/图片02.png" onclick="location.href='pages/02/02.html'"/> <img class="img3"
+			src="./images/01/图片03.png"  onclick="location.href='pages/03/03.html'"/>
 	</div>
-<img style="float:right;width:300px;" src="./images/图片1.png"/>
 </body>
 </html>
