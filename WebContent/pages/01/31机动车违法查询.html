@@ -46,10 +46,11 @@ body {
     height: 70px;
     font-weight: bold;
     color: #fff;
+
 }
-.btn:hover {
-    color: #fdf7f7;
-    text-decoration: none;
+input::-webkit-input-placeholder {
+     /* placeholder字体大小  */
+     font-size:30px;
 }
 </style>
 <script type="text/javascript">
@@ -60,7 +61,7 @@ body {
 	<div style="height:200px;vertical-align: middle;margin: 30px;">
 		<img style="float: left; width: 100px;" src="../../images/警徽.png" />
 		<img style="float: left; width: 500px;margin-top: 15px;" src="../../images/图片15.png" />
-		<img style="float: right; width: 100px;" onclick="location.href='../../home.html'"
+		<img style="float: right; width: 100px;" onclick="location.href='./01.html'"
 			src="../../images/0201/return.png" />
 		<img
 			style="float: right; width: 100px; margin-left: 50px;"
@@ -68,30 +69,17 @@ body {
 			src="../../images/0201/Home.png" />
 	</div>
 	
-	<div style=" padding-left: 100px; ">
-	 <div style="margin: 20px;">
-        <label class=" labelItem">表格打印</label>
-        <input type="button" class="btn labelValue" value="临时身份证明打印" onclick="location.href='./11临时身份证打印.html'"></input>
-        <input type="button" class="btn  labelValue" value="无犯罪记录证明打印" onclick="location.href='./12无犯罪记录证明打印.html'"></input>
+	<div style="padding: 0 200px;">
+		<input  type="text" class="form-control"  style="font-size: 30px;height: 80px;margin-bottom:40px;" placeholder="请输入车牌号码"/>
+		<input  type="text" class="form-control"  style="font-size: 30px;height: 80px;margin-bottom:40px;" placeholder="请输入发动机号码"/>
     </div>
-	<div style="margin: 20px;">
-		<label class=" labelItem">办证查询</label>
-		<input type="button" class="btn  labelValue" value="居民身份证办理查询" onclick="location.href='./21居民身份证办理查询.html'"></input>
-		<input type="button" class="btn  labelValue" value="因私出国护照办理查询" onclick="location.href=''"></input>
-		<br/>
-		 <label class=" labelItem"></label>
-		<input type="button" class="btn  labelValue" value="港澳通行证办理查询" onclick="location.href=''"></input>
-		<input type="button" class="btn  labelValue" value="台湾通行证办理查询" onclick="location.href=''"></input>
-       <br/>
-         <label class=" labelItem"></label>
-		<input type="button" class="btn  labelValue" value="户口审批结果查询" onclick="location.href=''"></input>
-	</div>
-	<div style="margin: 20px;">
-		<label class=" labelItem">交通违章查询</label>
-		<input type="button" class="btn  labelValue"   value="机动车违法查询" onclick="location.href='./31机动车违法查询.html'"></input>
-		<input type="button" class="btn  labelValue" value="驾驶员记分查询" onclick="location.href=''"></input>
-	</div>
-	
-    </div>
+    <div style="text-align:center;margin-top:200px;">
+        <button type="button" class="btn btn-primary btn-lg labelValue" style="height: 80px;" onclick="location.href='./3101.html'">
+            <span class="glyphicon glyphicon-search"></span> 查询
+        </button>
+        <button type="button" class="btn btn-primary btn-lg labelValue" style="height: 80px;">
+            <span class="glyphicon glyphicon-trash"></span> 重置
+        </button>
+        </div>
 </body>
 </html>
