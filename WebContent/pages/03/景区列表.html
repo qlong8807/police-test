@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>demo</title>
-<!-- <link rel="stylesheet" -->
-<!-- 	href="../../bootstrap-3.3.7/css/bootstrap.min.css"></link> -->
+<link rel="stylesheet"
+	href="../../bootstrap-3.3.7/css/bootstrap.min.css"></link>
 <link rel="stylesheet"
 	href="./list.css"></link>
 <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
@@ -13,8 +13,8 @@
          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->
-<!-- <script src="https://code.jquery.com/jquery.js"></script> -->
-<!-- <script src="../../bootstrap-3.3.7/js/bootstrap.min.js"></script> -->
+<script src="../../js/jquery-1.9.1.min.js"></script>
+<script src="../../bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <style type="text/css">
 html, body {
 	height: 100%;
@@ -32,6 +32,9 @@ body {
 }
 </style>
 <script type="text/javascript">
+function openSelect(){
+	document.getElementById("showArea").style.display="display";
+}
 </script>
 </head>
 <body>
@@ -48,29 +51,125 @@ body {
 	</div>
 <!-- 	条件区域 -->
 	<div>
-	   <select>
-	       <option>1</option>
-	       <option>2</option>
-	       <option>3</option>
-	   </select>
+	   <div class="form-group" style="font-size: 30px;height: 80px;">
+		    <label for="name">选择区域:<a href="#" data-toggle="modal" data-target="#myModal">上海</a></label>
+	    </div>
 	</div>
 <!-- 	列表区域 -->
-	<div>
+	<div style="">
+	<div style="font-size: 30px;height: 80px;"><label>景区详情</label></div>
 <!-- 	   卡片 -->
         <div class="tile">
-        <img src=""/>
+        <img src="../../images/other/shhyg.png"/>
         <div class="text">
-	    <h1>文章标题</h1>
-	    <h2 class="animate-text">文章子标题</h2>
-	    <p class="animate-text">文章的描述信息</p>
-	       <div class="dots">
+	    <h1>上海海洋馆</h1>
+	    <h2 class="animate-text">海洋馆两大一小亲子游只需128元</h2>
+	    <p class="animate-text">上海海洋水族馆是一座具国际一流水准的现代化大型海洋水族馆。分中国、南美洲(亚马逊)、澳大利亚、非洲、东南亚、冷水、极地、海岸、深海九大展区。</p>
+	       <div class="dots" style="margin-top: 40px;float: right;">
+	        <span><input type="button" class="btn btn-warning btn-lg" value="抢购"/></span>
+	        <span><input type="button" class="btn btn-warning btn-lg" value="详情" onclick="location.href='./景区详情.html'"/></span>
 	        <span></span>
+	       </div>
+	       </div>
+        </div>
+<!-- 	   卡片 -->
+        <div class="tile">
+        <img src="../../images/other/shhyg2.png"/>
+        <div class="text">
+	    <h1>上海海洋馆</h1>
+	    <h2 class="animate-text">海洋馆两大一小亲子游只需128元</h2>
+	    <p class="animate-text">上海海洋水族馆是一座具国际一流水准的现代化大型海洋水族馆。分中国、南美洲(亚马逊)、澳大利亚、非洲、东南亚、冷水、极地、海岸、深海九大展区。</p>
+	       <div class="dots" style="margin-top: 40px;float: right;">
+	        <span><input type="button" class="btn btn-warning btn-lg" value="抢购"/></span>
+	        <span><input type="button" class="btn btn-warning btn-lg" value="详情" onclick="location.href='./景区详情.html'"/></span>
 	        <span></span>
+	       </div>
+	       </div>
+        </div>
+<!-- 	   卡片 -->
+        <div class="tile">
+        <img src="../../images/other/shhyg2.png"/>
+        <div class="text">
+	    <h1>上海海洋馆</h1>
+	    <h2 class="animate-text">海洋馆两大一小亲子游只需128元</h2>
+	    <p class="animate-text">上海海洋水族馆是一座具国际一流水准的现代化大型海洋水族馆。分中国、南美洲(亚马逊)、澳大利亚、非洲、东南亚、冷水、极地、海岸、深海九大展区。</p>
+	       <div class="dots" style="margin-top: 40px;float: right;">
+	        <span><input type="button" class="btn btn-warning btn-lg" value="抢购"/></span>
+	        <span><input type="button" class="btn btn-warning btn-lg" value="详情" onclick="location.href='./景区详情.html'"/></span>
+	        <span></span>
+	       </div>
+	       </div>
+        </div>
+<!-- 	   卡片 -->
+        <div class="tile">
+        <img src="../../images/other/shhyg2.png"/>
+        <div class="text">
+	    <h1>上海海洋馆</h1>
+	    <h2 class="animate-text">海洋馆两大一小亲子游只需128元</h2>
+	    <p class="animate-text">上海海洋水族馆是一座具国际一流水准的现代化大型海洋水族馆。分中国、南美洲(亚马逊)、澳大利亚、非洲、东南亚、冷水、极地、海岸、深海九大展区。</p>
+	       <div class="dots" style="margin-top: 40px;float: right;">
+	        <span><input type="button" class="btn btn-warning btn-lg" value="抢购"/></span>
+	        <span><input type="button" class="btn btn-warning btn-lg" value="详情" onclick="location.href='./景区详情.html'"/></span>
+	        <span></span>
+	       </div>
+	       </div>
+        </div>
+<!-- 	   卡片 -->
+        <div class="tile">
+        <img src="../../images/other/shhyg2.png"/>
+        <div class="text">
+	    <h1>上海海洋馆</h1>
+	    <h2 class="animate-text">海洋馆两大一小亲子游只需128元</h2>
+	    <p class="animate-text">上海海洋水族馆是一座具国际一流水准的现代化大型海洋水族馆。分中国、南美洲(亚马逊)、澳大利亚、非洲、东南亚、冷水、极地、海岸、深海九大展区。</p>
+	       <div class="dots" style="margin-top: 40px;float: right;">
+	        <span><input type="button" class="btn btn-warning btn-lg" value="抢购"/></span>
+	        <span><input type="button" class="btn btn-warning btn-lg" value="详情" onclick="location.href='./景区详情.html'"/></span>
+	        <span></span>
+	       </div>
+	       </div>
+        </div>
+<!-- 	   卡片 -->
+        <div class="tile">
+        <img src="../../images/other/shhyg2.png"/>
+        <div class="text">
+	    <h1>上海海洋馆</h1>
+	    <h2 class="animate-text">海洋馆两大一小亲子游只需128元</h2>
+	    <p class="animate-text">上海海洋水族馆是一座具国际一流水准的现代化大型海洋水族馆。分中国、南美洲(亚马逊)、澳大利亚、非洲、东南亚、冷水、极地、海岸、深海九大展区。</p>
+	       <div class="dots" style="margin-top: 40px;float: right;">
+	        <span><input type="button" class="btn btn-warning btn-lg" value="抢购"/></span>
+	        <span><input type="button" class="btn btn-warning btn-lg" value="详情" onclick="location.href='./景区详情.html'"/></span>
+	        <span></span>
+	       </div>
+	       </div>
+        </div>
+<!-- 	   卡片 -->
+        <div class="tile">
+        <img src="../../images/other/shhyg2.png"/>
+        <div class="text">
+	    <h1>上海海洋馆</h1>
+	    <h2 class="animate-text">海洋馆两大一小亲子游只需128元</h2>
+	    <p class="animate-text">上海海洋水族馆是一座具国际一流水准的现代化大型海洋水族馆。分中国、南美洲(亚马逊)、澳大利亚、非洲、东南亚、冷水、极地、海岸、深海九大展区。</p>
+	       <div class="dots" style="margin-top: 40px;float: right;">
+	        <span><input type="button" class="btn btn-warning btn-lg" value="抢购"/></span>
+	        <span><input type="button" class="btn btn-warning btn-lg" value="详情" onclick="location.href='./景区详情.html'"/></span>
 	        <span></span>
 	       </div>
 	       </div>
         </div>
         
 	</div>
+	
+	
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 850px;">
+        <div class="modal-content">
+            <div class="modal-body">
+		    <img src="../../images/other/selectArea.png" style="width: 800px;"/>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
 </body>
 </html>
